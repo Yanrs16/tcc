@@ -1,82 +1,112 @@
-/* Estilo geral do formulário de login */
-.login-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 120vh;
-    background: rgba(248, 178, 72, 0.5); /* Mantém o fundo parecido com o registro */
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+/* Define o estilo do corpo da página */
+body {
+    margin: 0; /* Remove a margem padrão */
+    padding: 0; /* Remove o preenchimento padrão */
+    box-sizing: border-box; /* Define o box-sizing como border-box */
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; /* Define a fonte padrão */
+    height: 100vh; /* Define a altura do body como 100% da altura da viewport */
+    display: flex; /* Usa flexbox para layout */
+    justify-content: center; /* Centraliza o conteúdo horizontalmente */
+    align-items: center; /* Centraliza o conteúdo verticalmente */
+    background: rgb(184, 112, 5); /* Define o fundo do body com uma cor semi-transparente */
 }
 
-/* Estilo do formulário de login */
-.login-container form {
-    width: 400px;
-    background: #eb9c09;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 0 20px 0 #000000;
-    border: 3px solid black; /* Borda preta ao redor do formulário */
-    display: flex;
-    flex-direction: column; /* Coloca os itens um embaixo do outro */
-    gap: 20px; /* Espaçamento entre os elementos */
+/* Estilo geral do formulário */
+.formulario-cadastro-geral {
+    display: flex; /* Usa flexbox para layout */
+    justify-content: center; /* Centraliza o conteúdo horizontalmente */
+    align-items: center; /* Centraliza o conteúdo verticalmente */
+    width: 100%; /* Define a largura como 100% */
+    height: 100%; /* Define a altura como 100% */
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; /* Define a fonte para o contêiner */
 }
 
-/* Título do formulário */
-.login-container form h2 {
-    color: #ffffff;
-    font-size: 2em;
-    font-weight: 800;
-    text-align: center;
+/* Estilo do formulário dentro do contêiner de registro */
+.formulario {
+    display:block; /* Usa grid para layout */
+    width: 500px; /* Define a largura do formulário */
+    background: #eb9c09; /* Define a cor de fundo do formulário */
+    padding: 50px; /* Define o preenchimento interno */
+    border-radius: 8px; /* Arredonda os cantos */
+    box-shadow: 0 0 20px 0 #000000; /* Adiciona uma sombra ao redor do formulário */
+    height: auto; /* Define a altura do formulário */
 }
 
-/* Estilo dos grupos de entrada */
-.login-container form .input-group {
-    border: 3px solid black; /* Borda preta nas colunas */
-    border-radius: 6px; /* Borda arredondada para os campos */
-    padding: 5px; /* Padding para que o texto não fique colado na borda */
+/* Estilo do título dentro do formulário */
+.titulo-formulario {
+    color: #ffffff; /* Define a cor do texto */
+    font-size: 2em; /* Define o tamanho da fonte */
+    font-weight: 60; /* Define a espessura da fonte */
+    text-align: center; /* Centraliza o texto */
+    grid-column: span 2; /* Faz com que o título ocupe as duas colunas */
+    margin-top: -40px;
+    border-bottom: 2px solid #ffffff; /* Adiciona um traço embaixo do título */
+    padding-bottom: 10px; /* Adiciona um espaço entre o texto e o traço */
 }
+
+/* Estilo dos rótulos dos campos de entrada */
+.label-formulario {
+    color: #000000; /* Define a cor do texto */
+    font-size: 1.5em; /* Define o tamanho da fonte */
+    font-weight: 60; /* Define a espessura da fonte */
+    text-align: center; /* Centraliza o texto */
+}
+
 
 /* Estilo dos campos de entrada */
-.login-container form input[type="text"],
-.login-container form input[type="password"] {
-    width: 90%; /* Faz os campos de entrada ocuparem toda a largura */
-    padding: 12px;
-    margin-top: 5px;
-    background: rgb(252, 252, 252);
-    border: 2px solid rgb(252, 252, 252);
-    border-radius: 6px;
-    font-size: 1em;
+.input-text {
+    width: 100%; /* Define a largura como 100% do contêiner pai */
+    padding: 12px; /* Define o preenchimento interno */
+    margin-top: 8px; /* Define a margem superior */
+    background: rgb(252, 252, 252); /* Define a cor de fundo */
+    border: 1px solid rgb(252, 252, 252); /* Define a cor da borda */
+    border-radius: 6px; /* Arredonda os cantos */
+    font-size: 1em; /* Define o tamanho da fonte */
+}
+.input-password{
+    width: 100%; /* Define a largura como 100% do contêiner pai */
+    padding: 12px; /* Define o preenchimento interno */
+    margin-top: 8px; /* Define a margem superior */
+    background: rgb(252, 252, 252); /* Define a cor de fundo */
+    border: 1px solid rgb(252, 252, 252); /* Define a cor da borda */
+    border-radius: 6px; /* Arredonda os cantos */
+    font-size: 1em; /* Define o tamanho da fonte */
 }
 
-.login-container form input[type="text"]:focus,
-.login-container form input[type="password"]:focus {
-    border: 1px solid #000000;
-    outline: none;
+/* Estilo dos campos de entrada quando estão em foco */
+.input-text:focus,
+.input-password:focus {
+    border: 1px solid #000000; /* Define a cor da borda quando em foco */
+    outline: none; /* Remove o contorno padrão */
 }
 
-/* Estilo do botão de login */
-.login-container form input[type="submit"] {
-    width: 100%;
-    padding: 12px;
-    border: none;
-    border-radius: 6px;
-    background: hsl(0, 2%, 59%);
-    color: #ffffff;
-    font-size: 1em;
-    font-weight: bold;
-    cursor: pointer;
+/* Estilo do botão de envio */
+.submit-button {
+    width: 105%; /* Define a largura como 100% do contêiner pai */
+    padding: 12px; /* Define o preenchimento interno */
+    border: none; /* Remove a borda */
+    border-radius: 6px; /* Arredonda os cantos */
+    background: #000000; /* Define a cor de fundo */
+    color: #ffffff; /* Define a cor do texto */
+    font-size: 1em; /* Define o tamanho da fonte */
+    font-weight: bold; /* Define a espessura da fonte */
+    cursor: pointer; /* Define o cursor como ponteiro */
+    margin-top: 12px;
+    margin-top: 12px;
 }
 
-.login-container form input[type="submit"]:hover {
-    background: #c7b462;
+/* Estilo do botão de envio quando o mouse está sobre ele */
+.submit-button:hover {
+    background: #c7b462; /* Muda a cor de fundo ao passar o mouse */
 }
 
-/* Estilo do link de cadastro */
-.login-container form p a {
-    color: #ffffff;
-    text-decoration: none;
+/* Estilo dos links dentro dos parágrafos */
+.link {
+    color: #ffffff; /* Define a cor do link */
+    text-decoration: none; /* Remove a sublinha */
 }
 
-.login-container form p a:hover {
-    color: #0044ff;
+/* Estilo dos links quando o mouse está sobre eles */
+.link:hover {
+    color: #0044ff; /* Muda a cor do link ao passar o mouse */
 }
