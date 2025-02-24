@@ -3,28 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login</title>
     <link rel="stylesheet" href="login.css">
+    <title>Formulário de Cadastro</title>
 </head>
 <body>
-    <div class="login-container">
-        <form action="processar_login.php" method="POST">
-            <h2>Login</h2>
-            <div class="input-group">
-                <label for="username">E-mail:</label>
-                <input type="text" id="username" name="username" required>
-            </div>
-            <div class="input-group">
-                <label for="password">Senha:</label>
-                <input type="password" id="password" name="password" required>
-            </div>
-            <div class="input-group">
-                <input type="submit" value="Entrar">
-            </div>
-            <p>Não tem uma conta? <a href="http://localhost/yan/tcc/cadastro.php">Cadastre-se</a></p>
-        </form>
-    </div>
-    
-    
+<div class="formulario-cadastro-geral">
+    <form action=" " method="post" class="formulario">
+        <h2 class="titulo-formulario">Login</h2>
+
+        
+        <div class="campo-formulario">
+            <label for="email" class="label-formulario"><b>E-mail:</b></label><br>
+            <input type="text" name="email" id="email" class="input-text" required placeholder="Informe seu e-mail" />
+        </div>
+
+
+        <div class="campo-formulario">
+            <label for="senha" class="label-formulario"><b><br>Senha:</b></label><br>
+            <input type="password" name="senha" id="senha" class="input-password" required placeholder="Informe a senha"/>
+        </div>
+
+        <div class="botao-formulario" style="grid-column: span 2; text-align: center;">
+            <input type="submit" class="submit-button" value="Entrar">
+        </div>
+
+        <div class="link-formulario" style="grid-column: span 2; text-align: center;">
+            <p>Já possui uma conta? <a href=" " class="link">Clique aqui</a></p>
+        </div>
+    </form>
+</div>
 </body>
 </html>
