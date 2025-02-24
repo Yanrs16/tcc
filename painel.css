@@ -1,0 +1,65 @@
+/* Define o estilo do corpo da página */
+body {
+    margin: 0; /* Remove a margem padrão */
+    padding: 0; /* Remove o preenchimento padrão */
+    box-sizing: border-box; /* Define o box-sizing como border-box */
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; /* Define a fonte padrão */
+    height: 100vh; /* Define a altura do body como 100% da altura da viewport */
+    display: flex; /* Usa flexbox para layout */
+    justify-content: center; /* Centraliza o conteúdo horizontalmente */
+    align-items: center; /* Centraliza o conteúdo verticalmente */
+background: rgb(184, 112, 5);/* Define o fundo do body com uma cor semi-transparente */
+}
+
+/* Estilo do contêiner principal */
+.container {
+    text-align: center; /* Centraliza o texto */
+}
+
+/* Estilo do título */
+.titulo {
+    color: #ffffff; /* Define a cor do texto */
+    font-size: 2em; /* Define o tamanho da fonte */
+    margin-bottom: 20px; /* Define a margem inferior */
+}
+
+/* Estilo das opções de usuário */
+.user-options {
+    display: flex; /* Usa flexbox para layout */
+    justify-content: center; /* Centraliza o conteúdo horizontalmente */
+    gap: 50px; /* Espaçamento entre as opções */
+}
+
+/* Estilo de cada opção de usuário */
+.user-option {
+    background: #eb9c09; /* Define a cor de fundo */
+    padding: 20px; /* Define o preenchimento interno */
+    border-radius: 8px; /* Arredonda os cantos */
+    box-shadow: 0 0 20px 0 #000000; /* Adiciona uma sombra ao redor */
+    text-align: center; /* Centraliza o texto */
+    width: 200px; /* Define a largura */
+}
+
+/* Estilo das imagens dos usuários */
+.user-image {
+    width: 100px; /* Define a largura */
+    height: 100px; /* Define a altura */
+    border-radius: 50%; /* Arredonda as bordas */
+    margin-bottom: 10px; /* Define a margem inferior */
+}
+
+/* Estilo dos links */
+.user-link {
+    display: inline-block; /* Define o link como bloco inline */
+    padding: 10px 20px; /* Define o preenchimento interno */
+    background: #000000; /* Define a cor de fundo */
+    color: #ffffff; /* Define a cor do texto */
+    text-decoration: none; /* Remove a sublinha */
+    border-radius: 6px; /* Arredonda os cantos */
+    margin-top: 10px; /* Define a margem superior */
+}
+
+/* Estilo dos links quando o mouse está sobre eles */
+.user-link:hover {
+    background: #c7b462; /* Muda a cor de fundo ao passar o mouse */
+}
